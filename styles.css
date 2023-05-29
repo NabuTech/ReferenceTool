@@ -1,0 +1,19 @@
+/* CSS */
+#noteList li {
+  display: none;
+}
+
+#categoryFilter li a {
+  text-decoration: none;
+}
+
+#categoryFilter li a.active {
+  font-weight: bold;
+}
+
+#categoryFilter li a[href="#all"]:target ~ #noteList li,
+#categoryFilter li a[href="#html"]:target ~ #noteList li.html,
+#categoryFilter li a[href="#css"]:target ~ #noteList li.css,
+#categoryFilter li a[href="#javascript"]:target ~ #noteList li.javascript {
+  display: block;
+}
